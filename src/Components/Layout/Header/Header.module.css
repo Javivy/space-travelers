@@ -37,6 +37,10 @@ li {
   color: rgb(88, 88, 253);
 }
 
+a {
+  text-decoration: none;
+}
+
 .combine {
   display: flex;
   justify-content: space-around;

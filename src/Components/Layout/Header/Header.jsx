@@ -1,8 +1,13 @@
+import { NavLink } from 'react-router-dom';
 import React from 'react';
 import Logo from './planet.png';
 import css from './Header.module.css';
 
 export default function Header() {
+  const activeStyle = {
+    textDecoration: 'underline',
+  };
+
   return (
     <>
       <nav>
@@ -12,15 +17,27 @@ export default function Header() {
         </div>
         <ul className={css.nav_links}>
           <li className={css.nav_link}>
-            <a to="/Rockets">Rockets</a>
+            <NavLink style={({ isActive }) => (isActive ? activeStyle : undefined)} to="/">Rockets</NavLink>
           </li>
           <div className={css.combine}>
             <li className={css.nav_link}>
-              <a to="/Missions">Missions</a>
+              <NavLink
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                to="/missions"
+              >
+                Missions
+
+              </NavLink>
             </li>
             <div className={css.vLine} />
             <li className={css.nav_link}>
-              <a to="Profile">My Profile</a>
+              <NavLink
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                to="/profile"
+              >
+                My Profile
+
+              </NavLink>
             </li>
           </div>
         </ul>
