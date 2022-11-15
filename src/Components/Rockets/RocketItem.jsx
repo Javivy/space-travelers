@@ -17,13 +17,10 @@ export default function RocketItem(props) {
   const { rocket } = props;
 
   const handleReserve = () => {
-    rocket
     dispatch(reserveRocket(rocket.id));
   };
 
-  const handleCancel = () => {
-    dispatch(reserveRocket(rocket.id));
-  };
+  const buttonCSS = rocket.reserved ? css.cancel_button : css.reserve_button;
 
   return (
     <div className={css.rocket_item}>
@@ -34,8 +31,9 @@ export default function RocketItem(props) {
           {rocket.reserved && <span>reserved </span>}
           {rocket.description}
         </p>
-        {rocket.reserved && <button type="button" onClick={handleCancel}> Cancel Reservation </button>}
-        {!rocket.reserved && <button type="button" onClick={handleReserve}> Reserve Rocket </button>}
+        <button type="button" onClick={handleReserve} className={buttonCSS}>
+          {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+        </button>
       </div>
     </div>
   );
