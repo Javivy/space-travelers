@@ -1,0 +1,18 @@
+.rocket_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.rocket_img {
+  width: 300px !important;
+  height: 225px;
+}
+
+.rocket_name {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}

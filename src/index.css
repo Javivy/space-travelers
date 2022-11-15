@@ -12,5 +12,7 @@ ul {
 }
 
 .body {
+  margin-top: 50px;
   padding: 0 30px;
+  box-sizing: border-box;
 }
