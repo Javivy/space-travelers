@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { fetchRockets } from './Redux/Rockets';
+import { fetchMissions } from './Redux/Missions';
 
 import Header from './Components/Layout/Header/Header';
 import Profile from './Components/Pages/Profile/Profile';
@@ -13,6 +14,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchRockets());
+    dispatch(fetchMissions());
   }, [dispatch]);
 
   return (
