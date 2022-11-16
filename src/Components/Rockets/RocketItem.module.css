@@ -1,0 +1,52 @@
+.rocket_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.rocket_img {
+  width: 300px !important;
+  height: 225px;
+}
+
+.rocket_name {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.reserve_button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.cancel_button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+span {
+  width: 100px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgb(39, 1, 82);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 5px;
+}

@@ -1,10 +1,20 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { fetchRockets } from './Redux/Rockets';
+
 import Header from './Components/Layout/Header/Header';
 import Profile from './Components/Pages/Profile/Profile';
 import Rockets from './Components/Pages/Rockets/Rockets';
 // import Missions from './Components/Pages/Missions/Missions';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <Header />
