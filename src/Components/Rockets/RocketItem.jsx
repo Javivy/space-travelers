@@ -24,7 +24,11 @@ export default function RocketItem(props) {
 
   return (
     <div className={css.rocket_item}>
-      <img src={rocket.flickr_images[0]} className={css.rocket_img} alt={rocket.rocket_name} />
+      <img
+        src={rocket.flickr_images[0]}
+        className={css.rocket_img}
+        alt={rocket.rocket_name}
+      />
       <div className={css.rocket_info}>
         <h2 className={css.rocket_name}>{rocket.rocket_name}</h2>
         <p>

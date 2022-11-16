@@ -1,6 +1,10 @@
+import css from './Profile.module.css';
+import ReservedRockets from '../../Rockets/ReservedRockets';
+
 const Profile = () => (
-  <div>
-    Profile Page
+  <div className={css.profile_bg}>
+    <ReservedRockets />
+    <ReservedRockets />
   </div>
 );
 

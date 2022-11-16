@@ -26,9 +26,5 @@ export default function RocketList() {
     gap: '2rem',
   };
 
-  return (
-    <div style={styles}>
-      { content }
-    </div>
-  );
+  return <div style={styles}>{content}</div>;
 }
