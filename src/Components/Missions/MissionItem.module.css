@@ -12,7 +12,8 @@
   font-weight: bold;
 }
 
-.mission_badge, .mission_button {
+.mission_badge,
+.mission_button {
   display: flex;
   align-items: center;
   justify-content: center;
