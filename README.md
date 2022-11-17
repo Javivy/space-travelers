@@ -74,8 +74,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- You can check the full design file in [This website](https://pedantic-beaver-cb923b.netlify.app/#/) where you can also check the exact dimensions of all elements.
-- **IMPORTANT**: this is not the original website, the original website is made by [Zeplin Project](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378)
 
 ## 📝 License
 
