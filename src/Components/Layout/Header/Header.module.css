@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1rem;
+  border-bottom: 1px solid rgb(132, 132, 132);
+  margin: 0 30px;
+  background-color: white;
+}
+
+.left_section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.logo_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 350px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  color: rgb(88, 88, 253);
+}
+
+a {
+  text-decoration: none;
+}
+
+.combine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+  width: 180px;
+}
+
+.vLine {
+  width: 2px;
+  height: 20px;
+  background-color: black;
+}
