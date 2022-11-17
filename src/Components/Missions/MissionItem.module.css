@@ -1,0 +1,40 @@
+.mission_item {
+  display: grid;
+  grid-template-columns: 20% 60% 10% 10%;
+}
+
+.mission_item div {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.mission_name {
+  font-weight: bold;
+}
+
+.mission_badge, .mission_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission_reserved_badge {
+  text-align: center;
+}
+
+.join_button {
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid #444;
+  background: #fff;
+  cursor: pointer;
+  color: #444;
+}
+
+.leave_button {
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid #ff2c2c;
+  color: #ff2c2c;
+  background: #fff;
+}

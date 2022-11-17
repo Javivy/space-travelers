@@ -1,0 +1,20 @@
+.missions_header {
+  display: grid;
+  grid-template-columns: 20% 60% 10% 10%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.missions_header div {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 100%;
+}
+
+.missions_header div p {
+  font-weight: 800;
+}
+
+.missions_header:nth-last-child() {
+  border: none;
+}

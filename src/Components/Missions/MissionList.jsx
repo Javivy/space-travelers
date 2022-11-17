@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import css from './MissionList.module.css';
 
 import MissionItem from './MissionItem';
 import MissionsHeader from './MissionsHeader';
@@ -18,14 +19,8 @@ export default function MissionList() {
     content = <div>{missions.error}</div>;
   }
 
-  const styles = {
-    display: 'flex',
-    alignItems: 'center',
-    width: '100%',
-  };
-
   return (
-    <div style={styles}>
+    <div className={css.missions_container}>
       <MissionsHeader />
       {content}
     </div>

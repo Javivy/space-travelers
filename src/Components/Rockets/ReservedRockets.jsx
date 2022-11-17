@@ -10,9 +10,11 @@ const ReservedRockets = () => {
       <div className={css.rockets}>
         <h2>My Rockets</h2>
         <ul>
-          {reservedRockets.map((rocket) => (
+          {
+          reservedRockets.length !== 0 ? reservedRockets.map((rocket) => (
             <li key={rocket.id}>{rocket.rocket_name}</li>
-          ))}
+          )) : <p>You haven&apos;t reserved any rockets yet</p>
+          }
         </ul>
       </div>
     </div>

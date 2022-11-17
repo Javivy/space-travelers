@@ -5,7 +5,6 @@ export const fetchMissions = createAsyncThunk(
   async () => {
     const response = await fetch('https://api.spacexdata.com/v3/missions');
     const missions = await response.json();
-    console.log(missions);
     return missions;
   },
 );
@@ -19,7 +18,7 @@ const missionsSlice = createSlice({
   },
   reducers: {
     reserveMissions: (state, action) => {
-      const id = Number(action.payload);
+      const id = action.payload;
       const indexItem = state.missions.findIndex((r) => r.id === id);
       const newMission = {
         ...state.missions[indexItem],
@@ -41,8 +40,6 @@ const missionsSlice = createSlice({
           reserved: false,
           description: mission.description,
         }));
-
-        console.log(action);
 
         state.missions = state.missions.concat(arr);
       })
