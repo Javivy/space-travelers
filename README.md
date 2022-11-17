@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps. (NPM)
 2. Navigate to the directory where you want your project cloned
 3. Clone the project using `git clone` or just copy the command below:
 ```  
-   git clone https://github.com/Javivy/books-store.git
+   git clone https://github.com/Javivy/space-travelers.git
 ```   
 4. Open the project with your IDE. I use [Visual Studio Code](https://code.visualstudio.com/download)
 5. Run `npm install` to get the dependencies
