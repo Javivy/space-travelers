@@ -4,14 +4,6 @@ import PropTypes from 'prop-types';
 import { reserveRocket } from '../../Redux/Rockets';
 import css from './RocketItem.module.css';
 
-// # needed variable from rockets.rockets
-/*
-  rocket_name
-  active
-  description
-  flickr_images
-*/
-
 export default function RocketItem(props) {
   const dispatch = useDispatch();
   const { rocket } = props;
